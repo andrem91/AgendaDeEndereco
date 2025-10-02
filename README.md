@@ -123,3 +123,13 @@ Content-Type: application/json
     "estado": "São Paulo"
 }
 ```
+
+---
+
+## Tratamento de Erros
+
+- 400 Bad Request - Erros de validação (ex.: CEP inválido, e-mail mal formatado).
+- 404 Not Found - Contato não encontrado ou CEP inexistente.
+- 503 Service Unavailable - Falha de comunicação com a API externa de CEP.
+- 500 Internal Server Error - Erro genérico da aplicação.
+
