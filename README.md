@@ -57,6 +57,19 @@ O tema do desafio é livre, use a criatividade e desenvolva uma aplicação que 
 - **Lombok**
 - **Mockoon**
 
+## Como Rodar a Aplicação
+
+```bash
+# Clonar repositório
+git clone https://github.com/andrem91/AgendaDeEndereco.git
+
+# Entrar no projeto
+cd agenda-endereco
+
+# Rodar aplicação
+mvn spring-boot:run
+```
+
 ## Endpoints
 
 ### Contatos
@@ -68,3 +81,4 @@ O tema do desafio é livre, use a criatividade e desenvolva uma aplicação que 
 ### Logs
 
 - GET /logs - Listar logs de consultas de CEP
+
