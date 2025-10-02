@@ -20,7 +20,6 @@ public class ContatoDTO {
     @NotBlank(message = "O CEP é obrigatório")
     @Pattern(regexp = "^\\d{5}-?\\d{3}$", message = "CEP deve estar no formato 00000-000")
     private String cep;
-    @NotBlank(message = "O número é obrigatório")
     private int numero;
     private String complemento;
 }
