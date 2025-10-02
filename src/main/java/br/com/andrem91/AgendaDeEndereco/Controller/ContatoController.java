@@ -4,6 +4,7 @@ import br.com.andrem91.AgendaDeEndereco.DTO.ContatoDTO;
 import br.com.andrem91.AgendaDeEndereco.Entity.ContatoEntity;
 import br.com.andrem91.AgendaDeEndereco.Service.ContatoService;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,8 +21,8 @@ public class ContatoController {
 
     @PostMapping
     public ResponseEntity<ContatoEntity> criarContato(@Valid @RequestBody ContatoDTO dto) {
-        ContatoEntity novoContatoEntity = contatoService.salvarContato(dto);
-        return ResponseEntity.ok(novoContatoEntity);
+        ContatoEntity novoContato = contatoService.salvarContato(dto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(novoContato);
     }
 
     @GetMapping
