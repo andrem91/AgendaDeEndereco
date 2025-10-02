@@ -57,6 +57,8 @@ O tema do desafio é livre, use a criatividade e desenvolva uma aplicação que 
 - **Lombok**
 - **Mockoon**
 
+---
+
 ## Como Rodar a Aplicação
 
 ```bash
@@ -70,6 +72,8 @@ cd agenda-endereco
 mvn spring-boot:run
 ```
 
+---
+
 ## Endpoints
 
 ### Contatos
@@ -82,3 +86,40 @@ mvn spring-boot:run
 
 - GET /logs - Listar logs de consultas de CEP
 
+---
+
+## Exemplo de requisição
+
+### Cadastrar Contato
+
+```http
+POST /contatos
+Content-Type: application/json
+
+{
+    "nome": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "(11)95555-5555",
+    "cep": "05424-150",
+    "numero": 100,
+    "complemento": "AP 79"
+}
+```
+
+### Resposta
+
+```json
+{
+    "id": 4,
+    "nome": "João da Silva",
+    "email": "joao@email.com",
+    "telefone": "(11)95555-5555",
+    "cep": "05424-150",
+    "numero": 100,
+    "complemento": "AP 79",
+    "logradouro": "Rua Aspicuelta",
+    "bairro": "Vila Madalena",
+    "cidade": "São Paulo",
+    "estado": "São Paulo"
+}
+```
