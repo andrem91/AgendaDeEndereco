@@ -1,4 +1,4 @@
-package br.com.andrem91.AgendaDeEndereco.Entity;
+package br.com.andrem91.AgendaDeEnderecos.Entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

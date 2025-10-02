@@ -1,6 +1,6 @@
-package br.com.andrem91.AgendaDeEndereco.API;
+package br.com.andrem91.AgendaDeEnderecos.API;
 
-import br.com.andrem91.AgendaDeEndereco.Exception.CepNotFoundException;
+import br.com.andrem91.AgendaDeEnderecos.Exception.CepNotFoundException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;

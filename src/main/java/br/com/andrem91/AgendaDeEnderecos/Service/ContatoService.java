@@ -1,11 +1,11 @@
-package br.com.andrem91.AgendaDeEndereco.Service;
+package br.com.andrem91.AgendaDeEnderecos.Service;
 
-import br.com.andrem91.AgendaDeEndereco.API.CepApi;
-import br.com.andrem91.AgendaDeEndereco.DTO.ContatoDTO;
-import br.com.andrem91.AgendaDeEndereco.Entity.ConsultaCepLogEntity;
-import br.com.andrem91.AgendaDeEndereco.Entity.ContatoEntity;
-import br.com.andrem91.AgendaDeEndereco.Repository.ConsultaCepLogRepository;
-import br.com.andrem91.AgendaDeEndereco.Repository.ContatoRepository;
+import br.com.andrem91.AgendaDeEnderecos.API.CepApi;
+import br.com.andrem91.AgendaDeEnderecos.DTO.ContatoDTO;
+import br.com.andrem91.AgendaDeEnderecos.Entity.ConsultaCepLogEntity;
+import br.com.andrem91.AgendaDeEnderecos.Entity.ContatoEntity;
+import br.com.andrem91.AgendaDeEnderecos.Repository.ConsultaCepLogRepository;
+import br.com.andrem91.AgendaDeEnderecos.Repository.ContatoRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

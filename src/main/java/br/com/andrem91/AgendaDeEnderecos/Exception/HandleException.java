@@ -1,4 +1,4 @@
-package br.com.andrem91.AgendaDeEndereco.Exception;
+package br.com.andrem91.AgendaDeEnderecos.Exception;
 
 
 import org.springframework.context.support.DefaultMessageSourceResolvable;

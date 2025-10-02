@@ -63,10 +63,10 @@ O tema do desafio é livre, use a criatividade e desenvolva uma aplicação que 
 
 ```bash
 # Clonar repositório
-git clone https://github.com/andrem91/AgendaDeEndereco.git
+git clone https://github.com/andrem91/AgendaDeEnderecos.git
 
 # Entrar no projeto
-cd agenda-endereco
+cd agenda-enderecos
 
 # Rodar aplicação
 mvn spring-boot:run

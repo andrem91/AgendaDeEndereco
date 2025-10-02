@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.andrem91</groupId>
-	<artifactId>AgendaDeEndereco</artifactId>
+	<artifactId>AgendaDeEnderecos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>AgendaDeEndereco</name>
-	<description>Aplicativo para cadastro de endereços</description>
+	<name>AgendaDeEnderecos</name>
+	<description>Aplicativo para cadastro de contatos</description>
 	<url/>
 	<licenses>
 		<license/>

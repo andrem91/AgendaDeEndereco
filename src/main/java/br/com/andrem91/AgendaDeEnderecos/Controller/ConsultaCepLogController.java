@@ -1,7 +1,7 @@
-package br.com.andrem91.AgendaDeEndereco.Controller;
+package br.com.andrem91.AgendaDeEnderecos.Controller;
 
-import br.com.andrem91.AgendaDeEndereco.Entity.ConsultaCepLogEntity;
-import br.com.andrem91.AgendaDeEndereco.Service.ConsultaCepLogService;
+import br.com.andrem91.AgendaDeEnderecos.Entity.ConsultaCepLogEntity;
+import br.com.andrem91.AgendaDeEnderecos.Service.ConsultaCepLogService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

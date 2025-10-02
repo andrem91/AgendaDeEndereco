@@ -1,8 +1,8 @@
-package br.com.andrem91.AgendaDeEndereco.Controller;
+package br.com.andrem91.AgendaDeEnderecos.Controller;
 
-import br.com.andrem91.AgendaDeEndereco.DTO.ContatoDTO;
-import br.com.andrem91.AgendaDeEndereco.Entity.ContatoEntity;
-import br.com.andrem91.AgendaDeEndereco.Service.ContatoService;
+import br.com.andrem91.AgendaDeEnderecos.DTO.ContatoDTO;
+import br.com.andrem91.AgendaDeEnderecos.Entity.ContatoEntity;
+import br.com.andrem91.AgendaDeEnderecos.Service.ContatoService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

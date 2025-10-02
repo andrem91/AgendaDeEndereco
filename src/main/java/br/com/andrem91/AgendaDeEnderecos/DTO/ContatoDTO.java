@@ -1,4 +1,4 @@
-package br.com.andrem91.AgendaDeEndereco.DTO;
+package br.com.andrem91.AgendaDeEnderecos.DTO;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
