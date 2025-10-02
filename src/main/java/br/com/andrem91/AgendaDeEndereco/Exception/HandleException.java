@@ -45,4 +45,26 @@ public class HandleException {
                         "timestamp", LocalDateTime.now()
                 ));
     }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<Map<String, Object>> handleGeneric(Exception ex) {
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body(Map.of(
+                        "status", 500,
+                        "error", "Erro interno no servidor",
+                        "message", ex.getMessage(),
+                        "timestamp", LocalDateTime.now()
+                ));
+    }
+
+    @ExceptionHandler(org.springframework.web.client.ResourceAccessException.class)
+    public ResponseEntity<Map<String, Object>> handleApiUnavailable(Exception ex) {
+        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
+                .body(Map.of(
+                        "status", 503,
+                        "error", "Serviço de CEP indisponível",
+                        "message", "Não foi possível conectar ao serviço externo de CEP",
+                        "timestamp", LocalDateTime.now()
+                ));
+    }
 }
