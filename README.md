@@ -38,9 +38,11 @@ O tema do desafio é livre, use a criatividade e desenvolva uma aplicação que 
 
 - **Controller**: recebe requisições HTTP e retorna respostas JSON.
 - **DTO**: garante validação dos dados de entrada (nome, email, telefone, cep).
-- **Service**: regra de negócio, integra com o cliente de CEP e persiste dados.
+- **Service**: contém a regra de negócio, integra com a API externa, converte DTO em Entity, persiste dados e salva logs.
+- **Entity**: representa as tabelas do banco e é usada pelo JPA para mapear objetos Java para registros do banco.
 - **Repository**: abstração de persistência via Spring Data JPA.
 - **Database**: armazenamento em MySQL (contatos + logs).
+- **API Externa (Mockoon)**: fornece os dados do endereço a partir do CEP informado.
 
 ### Diagrama da Solução
 ![Diagrama da Solução](diagrama_agenda_de_cliente.png)
